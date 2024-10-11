@@ -1,4 +1,5 @@
-﻿using Api.Services;
+﻿using Api.Hubs;
+using Api.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,15 +12,19 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSingleton<ChatService>();
+builder.Services.AddSignalR();
+builder.Services.AddCors();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowCredentials().WithOrigins("http://localhost:4200"));
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapHub<ChatHub>("/hubs/chat");
 
 app.Run();
 
