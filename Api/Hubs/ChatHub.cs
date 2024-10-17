@@ -25,6 +25,13 @@ namespace Api.Hubs
 			await Groups.RemoveFromGroupAsync(Context.ConnectionId, "Come2Chat");
 			await base.OnDisconnectedAsync(exception);
 		}
+
+		public async Task AddUserConnectionId(string name)
+		{
+			_chatService.AddUserConnectinId(name, Context.ConnectionId);
+			var onlineUsers = _chatService.GetOnlineUsers();
+			await Clients.Groups("Come2Chat").SendAsync("OnlineUsers", onlineUsers);
+		}
 	}
 }
 
