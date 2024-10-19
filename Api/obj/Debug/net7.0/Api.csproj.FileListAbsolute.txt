@@ -31,3 +31,4 @@
 /Users/phiquangthanh/Desktop/Come2Chat/Come2Chat/Api/obj/Debug/net7.0/Api.pdb
 /Users/phiquangthanh/Desktop/Come2Chat/Come2Chat/Api/obj/Debug/net7.0/Api.genruntimeconfig.cache
 /Users/phiquangthanh/Desktop/Come2Chat/Come2Chat/Api/obj/Debug/net7.0/ref/Api.dll
+/Users/phiquangthanh/Desktop/Come2Chat/Come2Chat/Api/bin/Debug/net7.0/Api.staticwebassets.runtime.json
