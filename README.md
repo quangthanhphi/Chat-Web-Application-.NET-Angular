@@ -48,5 +48,5 @@ Install dependencies and run the development server.
   ng serve
   ```
 ## Project Structure
-API: Contains the .NET 7 backend project, including ChatService, ChatController, and ChatHub.
-ClientApp: Contains the Angular frontend project with components for chat functionality, forms, and user interfaces.
+**API: Contains the .NET 7 backend project, including ChatService, ChatController, and ChatHub.**
+**ClientApp: Contains the Angular frontend project with components for chat functionality, forms, and user interfaces.**
