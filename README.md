@@ -34,19 +34,19 @@ Ensure the following are installed:
    cd Come2Chat
    ```
 2. **Backend Setup**:
-Navigate to the backend project folder.
-Restore dependencies and build the API.
+- Navigate to the backend project folder.
+- Restore dependencies and build the API.
  ```bash
   dotnet restore
   dotnet build
   ```
 3. Frontend Setup:
-Go to the ClientApp folder.
-Install dependencies and run the development server.
+- Go to the ClientApp folder.
+- Install dependencies and run the development server.
   ```bash
   npm install
   ng serve
   ```
 ## Project Structure
-**API: Contains the .NET 7 backend project, including ChatService, ChatController, and ChatHub.**
-**ClientApp: Contains the Angular frontend project with components for chat functionality, forms, and user interfaces.**
+- API: Contains the .NET 7 backend project, including ChatService, ChatController, and ChatHub.**
+- ClientApp: Contains the Angular frontend project with components for chat functionality, forms, and user interfaces.
