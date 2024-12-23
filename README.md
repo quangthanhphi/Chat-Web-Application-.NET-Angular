@@ -3,9 +3,10 @@
 This project is a hands-on guide to building a real-time chat application using .NET 7, Angular 14, and SignalR. Designed for developers, this application showcases how to create a scalable, interactive chat system with various features like user status updates, message threading, and real-time communication.
 
 #Screenshot
-![image][images/1.png]
-![image][images/2.png]
-![image][images/3.png]
+<img src="images/1.png" alt="" width="300"/>
+<img src="images/2.png" alt="" width="300"/>
+<img src="images/3.png" alt="" width="300"/>
+
 
 ## Features
 
